@@ -1,0 +1,116 @@
+/* контейнер просто содержит узлы.
+Узел сам будет отвечать за свой отступ */
+.Container {
+
+    padding: 0;
+
+    margin: 0;
+
+}
+
+.Container li {
+
+    list-style-type: none; /* убрать кружочки/точечки */
+
+}
+
+.Expand {
+    width: 18px;
+    height: 18px;
+    float: left;
+
+}
+.Content {
+        /* чтобы не налезать на Expand */
+    margin-left:18px;
+        /* высота заголовка - как минимум равна Expand
+            Т.е правая колонка всегда выше или равна левой.
+            Иначе нижний float будет пытаться разместиться на получившейся ступеньке
+        */
+    min-height: 18px;
+}
+
+#tabs .tab {
+    display: inline-block; /* выстраиваем вкладки в один ряд */
+    padding: 5px 10px;
+    cursor: pointer;
+    position: relative;
+    z-index:5;
+}
+#tabs .whiteborder {
+    border: 1px solid #707070;
+    border-bottom: 1px solid #fff;
+    border-radius: 3px 3px 0  0;
+}
+#tabs .tabContent {
+    width: 300px;
+    height: 60px;
+    border: 1px solid #707070;
+    position: relative;
+    top: -1px;
+    z-index:1;
+    padding: 10px;
+    border-radius: 0 0 3px 3px
+}
+#tabs .hide {
+    display: none;
+}
+#tabs .show {
+    display: block;
+}
+
+
+/* открытое поддерево */
+
+.ExpandOpen .Expand {
+    background-image: url(img/minus.jpg);
+}
+
+/* закрытое поддерево */
+
+.ExpandClosed .Expand {
+
+    background-image: url(img/plus.jpg);
+}
+/* лист */
+
+.ExpandLeaf .Expand {
+    background-image: url(img/leaf.jpg);
+    height: 18px;
+    width: 18px;
+}
+.Node {
+
+    margin-left: 18px;
+    zoom: 1;
+    /* линия слева образуется повторяющимся фоновым рисунком */
+    background-image : url(img/i.gif);
+    background-position : top left;
+    background-repeat : repeat-y;
+}
+
+
+.ExpandOpen .Container {
+    display: block;
+}
+.ExpandClosed .Container {
+    display: none;
+}
+
+.ExpandOpen .list {
+    display: block;
+}
+.ExpandClosed .list {
+    display: none;
+}
+
+.ExpandOpen .Expand, .ExpandClosed .Expand {
+
+    cursor: pointer; /* иконки скрытия-раскрытия */
+
+}
+.ExpandLeaf .Expand {
+    cursor: auto; /* листовой узел */
+}
+
+
