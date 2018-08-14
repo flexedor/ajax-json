@@ -1,9 +1,21 @@
+var starting_api = 'https:api.myjson.com/bins/1fkroa';
+
 var roof = document.createElement("div");
 document.body.appendChild(roof);
 roof.className = "toolbar";
 
+var text_field=document.createElement("input");
+roof.appendChild(text_field);
+text_field.type="text";
+text_field.id="text_field";
 
-function tree_BUILDER() {
+var button_conform=document.createElement("button");
+roof.appendChild(button_conform);
+ button_conform.innerHTML="Conform";
+ button_conform.id="conform";
+
+
+
 
 function builder(data) {
 
@@ -183,13 +195,15 @@ recursion(data,container);
 
 };
 
-// 1. Создаём новый объект XMLHttpRequest
+
+function xhr(starting_api){
+    // 1. Создаём новый объект XMLHttpRequest
     var xhr = new XMLHttpRequest();
 
 // 2. Конфигурируем его: GET-запрос (конфигурируется с левого сайта )
 // https://randomuser.me/api/?gender=male
 //     https:api.myjson.com/bins/1fkroa
-    xhr.open('GET', '  https:api.myjson.com/bins/1fkroa', false);
+    xhr.open('GET', starting_api, false);
 
 // 3. Отсылаем запрос
     xhr.send();
@@ -203,10 +217,12 @@ recursion(data,container);
         delete data.error;
         delete data.warning;
         builder(data);
+
     }
 }
+xhr(starting_api);
 
-tree_BUILDER();
+
  window.onclick=function(e){
      var elem = e ? e.target : window.event.srcElement;
      if (elem.className==="Expand"){
@@ -216,10 +232,15 @@ tree_BUILDER();
             elem.parentNode.className="Node IsRoot ExpandOpen";
         }
      }
-     else {
-         alert(elem.className);
-    }
- }
+     else if (elem.id==="conform") {
+         var api =document.getElementById('text_field').value;
+         if (api === '') {
+             alert("Нет адреса,куда стучать ?!");
+         } else {
+             document.getElementById("text_field").value = "";
+             xhr(api);
+         }
+     } }
 
 
 

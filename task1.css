@@ -33,6 +33,14 @@
     padding-top: 50px;
     width: auto;
     display: inline-block;
+    vertical-align: top;
+}
+#text_field{
+   margin: 12px;
+    border-style: solid;
+    border-radius: 7px;
+    height: 22px;
+    width: 400px;
 }
 #tabs .tab {
     display: inline-block; /* выстраиваем вкладки в один ряд */
@@ -61,6 +69,18 @@
 }
 #tabs .show {
     display: block;
+}
+#conform{
+    background-color: #219552;
+    color: white;
+    width: 132px;
+    height: 32px;
+    border-color: #219552;
+    border-radius:7px ;
+    border-style: solid;
+    font-size: 18px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    cursor: pointer;
 }
 
 
