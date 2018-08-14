@@ -1,6 +1,11 @@
- function tree_BUILDER() {//по завершению загрузки
+var roof = document.createElement("div");
+document.body.appendChild(roof);
+roof.className = "toolbar";
 
-function builder(data) {//построение дерева
+
+function tree_BUILDER() {
+
+function builder(data) {
 
     var container = document.createElement("div");
     document.body.appendChild(container);
@@ -13,13 +18,13 @@ function builder(data) {//построение дерева
     container.innerHTML = '<img src="img/brackets.jpg">json'
 
 
-
 function cheaker(data,container) {
     for (var key in  data ){
         if (data.hasOwnProperty(key)){
             if (typeof data[key] === "object"){
                 if (Array.isArray(data[key])) {
-
+                    delete data.error;
+                    delete data.warning;
                     var container1 = document.createElement("ul");
                     container.appendChild(container1);
                     container1.className = "Container";
@@ -50,6 +55,8 @@ function cheaker(data,container) {
                     list.className="list";
                     recursion(data[key],list);
                 } else {
+                    delete data.error;
+                    delete data.warning;
                     var container1 = document.createElement("ul");
                     container.appendChild(container1);
                     container1.className = "Container";
@@ -75,9 +82,17 @@ function cheaker(data,container) {
                     content.appendChild(list);
                     list.className="list";
                     recursion(data[key],list);
+
                 }
             }else {
-                container.innerHTML += "<li><img src='img/leaf.jpg'>" + key + ':' + '"' + data[key] + '"' + '</li>';
+                i=randomInteger(1,3);
+                c="img/"+i+".jpg";
+                var li=document.createElement("li");
+                container.appendChild(li);
+                var pic0 = document.createElement("IMG");
+                pic0.src = c;
+                li.appendChild(pic0);
+                li.innerHTML += key + ':' + '"' + data[key] + '"' ;
             }
         }
     }
@@ -90,6 +105,9 @@ function recursion(data,container){
         if (data.hasOwnProperty(key)){
             if (typeof data[key] === "object"){
         if (Array.isArray(data[key])) {
+
+            delete data.error;
+            delete data.warning;
 
             var container1 = document.createElement("ul");
             container.appendChild(container1);
@@ -117,6 +135,8 @@ function recursion(data,container){
             list.className="list";
             cheaker(data[key],list);
         } else {
+            delete data.error;
+            delete data.warning;
             var container1 = document.createElement("ul");
             container.appendChild(container1);
             container1.className = "Container";
@@ -143,9 +163,21 @@ function recursion(data,container){
             list.className="list";
             cheaker(data[key],list);
         }
-    }else {
-                container.innerHTML += "<li><img src='img/leaf.jpg'>" + key + ':' + '"' + data[key] + '"' + '</li>';
+    }  else {
+                    i=randomInteger(1,3);
+                    c="img/"+i+".jpg";
+                    var li=document.createElement("li");
+                    container.appendChild(li);
+                    var pic0 = document.createElement("IMG");
+                    pic0.src = c;
+                    li.appendChild(pic0);
+                    li.innerHTML += key + ':' + '"' + data[key] + '"' ;
             }}}}
+    function randomInteger(min, max) {
+        var rand = min - 0.5 + Math.random() * (max - min + 1)
+        rand = Math.round(rand);
+        return rand;
+    }
 recursion(data,container);
 
 
@@ -155,7 +187,9 @@ recursion(data,container);
     var xhr = new XMLHttpRequest();
 
 // 2. Конфигурируем его: GET-запрос (конфигурируется с левого сайта )
-    xhr.open('GET', 'https://api.myjson.com/bins/1fkroa', false);
+// https://randomuser.me/api/?gender=male
+//     https:api.myjson.com/bins/1fkroa
+    xhr.open('GET', '  https:api.myjson.com/bins/1fkroa', false);
 
 // 3. Отсылаем запрос
     xhr.send();

@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="31d8e941-42b0-4dca-becd-fafe52da3ccd" name="Default" comment="" />
+    <list default="true" id="31d8e941-42b0-4dca-becd-fafe52da3ccd" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/blue.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/green.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/yellow.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task1.0.js" beforeDir="false" afterPath="$PROJECT_DIR$/task1.0.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task1.css" beforeDir="false" afterPath="$PROJECT_DIR$/task1.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.js" beforeDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -15,14 +23,14 @@
   <component name="FileEditorManager">
     <splitter split-orientation="horizontal" split-proportion="0.39751098">
       <split-first>
-        <splitter split-orientation="vertical" split-proportion="0.2904762">
+        <splitter split-orientation="vertical" split-proportion="0.3968254">
           <split-first>
             <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
               <file leaf-file-name="task1.0.html" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/task1.0.html">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="100">
-                      <caret line="10" column="7" lean-forward="true" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+                    <state relative-caret-position="102">
+                      <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
                     </state>
                   </provider>
                 </entry>
@@ -30,12 +38,12 @@
             </leaf>
           </split-first>
           <split-second>
-            <leaf>
+            <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
               <file leaf-file-name="task1.css" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/task1.css">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="272">
-                      <caret line="102" column="19" selection-start-line="102" selection-start-column="19" selection-end-line="102" selection-end-column="19" />
+                    <state relative-caret-position="225">
+                      <caret line="34" column="26" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
                       <folding>
                         <element signature="e#141#203#0" />
                         <element signature="e#213#269#0" />
@@ -54,8 +62,24 @@
           <file leaf-file-name="task1.0.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/task1.0.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="245">
-                  <caret line="179" column="65" selection-start-line="179" selection-start-column="65" selection-end-line="179" selection-end-column="65" />
+                <state relative-caret-position="51">
+                  <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+                  <folding>
+                    <element signature="n#!!block;n#tree_BUILDER#0" />
+                    <element signature="e#6587#6965#0" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="task8.1.js" pinned="false" current-in-tab="false">
+            <entry file="file://D:/TMS/teach-me-skills-javascript-basics/homeworks/FiodorLitskevich/8/task8.1.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="170">
+                  <caret line="10" column="63" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="63" />
+                  <folding>
+                    <element signature="n#!!doc" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -74,10 +98,12 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/task1.0.html" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/test.js" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/task1.0.js" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/task1.0.html" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -85,10 +111,10 @@
         <option value="$PROJECT_DIR$/tsconfig.json" />
         <option value="$PROJECT_DIR$/data.json" />
         <option value="$PROJECT_DIR$/test.task.js" />
-        <option value="$PROJECT_DIR$/test.js" />
         <option value="$PROJECT_DIR$/task1.0.html" />
-        <option value="$PROJECT_DIR$/task1.css" />
+        <option value="$PROJECT_DIR$/test.js" />
         <option value="$PROJECT_DIR$/task1.0.js" />
+        <option value="$PROJECT_DIR$/task1.css" />
       </list>
     </option>
   </component>
@@ -112,22 +138,6 @@
     <option name="width" value="820" />
     <option name="height" value="717" />
   </component>
-  <component name="ProjectInspectionProfilesVisibleTreeState">
-    <entry key="Project Default">
-      <profile-state>
-        <expanded-state>
-          <State>
-            <id />
-          </State>
-        </expanded-state>
-        <selected-state>
-          <State>
-            <id>General</id>
-          </State>
-        </selected-state>
-      </profile-state>
-    </entry>
-  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <sortByType ProjectPane="true" />
@@ -145,7 +155,7 @@
     <property name="node.js.detected.package.jscs" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.detected.package.stylelint" value="true" />
-    <property name="node.js.path.for.package.eslint" value="$PROJECT_DIR$/../tabs.20.js" />
+    <property name="node.js.path.for.package.eslint" value="D:/tabs.20.js" />
     <property name="node.js.path.for.package.jscs" value="project" />
     <property name="node.js.path.for.package.standard" value="project" />
     <property name="node.js.path.for.package.stylelint" value="C:/Program Files/nodejs/node" />
@@ -155,7 +165,8 @@
     <property name="node.js.selected.package.stylelint" value="D:" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.editor" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+    <property name="settings.editor.splitter.proportion" value="0.23495145" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -215,11 +226,14 @@
       <workItem from="1533901242800" duration="5506000" />
       <workItem from="1534145339377" duration="2853000" />
       <workItem from="1534150093470" duration="6296000" />
+      <workItem from="1534160800098" duration="5729000" />
+      <workItem from="1534175014866" duration="849000" />
+      <workItem from="1534237295166" duration="4503000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="127157000" />
+    <option name="totallyTimeSpent" value="138238000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -229,7 +243,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.32857144" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" />
@@ -254,29 +268,15 @@
   </component>
   <component name="VcsManagerConfiguration">
     <ignored-roots>
-      <path value="$PROJECT_DIR$/.." />
+      <path value="D:" />
     </ignored-roots>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="13" />
+      <option name="time" value="14" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/task1.0.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="20" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/task1.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="35" column="1" selection-start-line="35" selection-start-column="1" selection-end-line="35" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/task1.0.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -291,7 +291,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../tabs/tabs.20.js" />
+    <entry file="file://D:/tabs/tabs.20.js" />
     <entry file="file://$PROJECT_DIR$/task1.0.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -330,7 +330,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../tabs/tabs.20.js" />
+    <entry file="file://D:/tabs/tabs.20.js" />
     <entry file="file://$PROJECT_DIR$/task1.0.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -362,7 +362,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../tabs/tabs.20.js" />
+    <entry file="file://D:/tabs/tabs.20.js" />
     <entry file="file://$PROJECT_DIR$/task1.0.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -500,7 +500,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tsconfig.json" />
     <entry file="file://$PROJECT_DIR$/data.json" />
-    <entry file="file://$PROJECT_DIR$/../tabs/tabs.20.js" />
+    <entry file="file://D:/tabs/tabs.20.js" />
     <entry file="file://$PROJECT_DIR$/test.task.js" />
     <entry file="file://D:/TMS/js/home/8/task8.2.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -530,36 +530,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="15" column="21" selection-start-line="14" selection-start-column="8" selection-end-line="15" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/test.js" />
     <entry file="file://$PROJECT_DIR$/task1.0.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="10" column="7" lean-forward="true" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+        <state relative-caret-position="102">
+          <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/task1.css">
+    <entry file="file://D:/xbSoftware/tabs/tabs.20.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://D:/TMS/teach-me-skills-javascript-basics/homeworks/FiodorLitskevich/8/task8.1.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="102" column="19" selection-start-line="102" selection-start-column="19" selection-end-line="102" selection-end-column="19" />
+        <state relative-caret-position="170">
+          <caret line="10" column="63" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="63" />
           <folding>
-            <element signature="e#141#203#0" />
-            <element signature="e#213#269#0" />
-            <element signature="e#279#579#0" />
+            <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/task1.0.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="179" column="65" selection-start-line="179" selection-start-column="65" selection-end-line="179" selection-end-column="65" />
+        <state relative-caret-position="51">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+          <folding>
+            <element signature="n#!!block;n#tree_BUILDER#0" />
+            <element signature="e#6587#6965#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/task1.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="34" column="26" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
+          <folding>
+            <element signature="e#141#203#0" />
+            <element signature="e#213#269#0" />
+            <element signature="e#279#579#0" />
+          </folding>
         </state>
       </provider>
     </entry>
