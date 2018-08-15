@@ -11,7 +11,7 @@ text_field.id="text_field";
 
 var button_conform=document.createElement("button");
 roof.appendChild(button_conform);
- button_conform.innerHTML="Conform";
+ button_conform.innerHTML="GET";
  button_conform.id="conform";
 
 
@@ -28,6 +28,7 @@ function builder(data) {
     pic2.src = "img/brackets.jpg";
     container.appendChild(pic2);
     container.innerHTML = '<img src="img/brackets.jpg">json'
+    event_list(container);
 
 
 function cheaker(data,container) {
@@ -45,7 +46,7 @@ function cheaker(data,container) {
 
                     var root = document.createElement("li");
                     container1.appendChild(root);
-                    root.className = ("Node IsRoot ExpandOpen");
+                    root.className = ("Node IsRoot ExpandClosed");
 
                     var expand = document.createElement("div");
                     root.appendChild(expand);
@@ -75,7 +76,7 @@ function cheaker(data,container) {
 
                     var root = document.createElement("li");
                     container1.appendChild(root);
-                    root.className = ("Node IsRoot ExpandOpen");
+                    root.className = ("Node IsRoot ExpandClosed");
 
                     var expand = document.createElement("div");
                     root.appendChild(expand);
@@ -127,7 +128,7 @@ function recursion(data,container){
 
             var root = document.createElement("li");
             container1.appendChild(root);
-            root.className = ("Node IsRoot ExpandOpen");
+            root.className = ("Node IsRoot ExpandClosed");
 
             var expand = document.createElement("div");
             root.appendChild(expand);
@@ -155,7 +156,7 @@ function recursion(data,container){
 
             var root = document.createElement("li");
             container1.appendChild(root);
-            root.className = ("Node IsRoot ExpandOpen");
+            root.className = ("Node IsRoot ExpandClosed");
 
             var expand = document.createElement("div");
             root.appendChild(expand);
@@ -220,28 +221,55 @@ function xhr(starting_api){
 
     }
 }
+function event_list(tree) {
+
+    tree.onmousedown = function (e) {
+        if (e.target.className==="Expand"){
+            return false;
+        }else {
+        tree.style.position = 'absolute';
+        moveAt(e);
+        document.body.appendChild(tree);
+        tree.style.zIndex = 1000;
+
+        function moveAt(e) {
+            tree.style.left = e.pageX - tree.offsetWidth / 2 + 'px';
+            tree.style.top = e.pageY - tree.offsetHeight / 2 + 'px';
+        }
+
+        document.onmousemove = function (e) {
+            moveAt(e);
+        }
+        tree.onmouseup = function () {
+            document.onmousemove = null;
+            tree.onmouseup = null;
+        }
+        tree.ondragstart = function () {
+            return false;
+        };
+    }}
+
+    window.onclick = function (e) {
+        var elem = e ? e.target : window.event.srcElement;
+        if (elem.className === "Expand") {
+            if (elem.parentNode.className === "Node IsRoot ExpandOpen") {
+                elem.parentNode.className = "Node IsRoot ExpandClosed";
+            } else {
+                elem.parentNode.className = "Node IsRoot ExpandOpen";
+            }
+        }
+        else if (elem.id === "conform") {
+            var api = document.getElementById('text_field').value;
+            if (api === '') {
+                alert("Нет адреса,куда стучать ?!");
+            } else {
+                document.getElementById("text_field").value = "";
+                xhr(api);
+            }
+        }
+    }
+}
+
 xhr(starting_api);
 
-
- window.onclick=function(e){
-     var elem = e ? e.target : window.event.srcElement;
-     if (elem.className==="Expand"){
-        if (elem.parentNode.className==="Node IsRoot ExpandOpen") {
-            elem.parentNode.className="Node IsRoot ExpandClosed";
-        }else {
-            elem.parentNode.className="Node IsRoot ExpandOpen";
-        }
-     }
-     else if (elem.id==="conform") {
-         var api =document.getElementById('text_field').value;
-         if (api === '') {
-             alert("Нет адреса,куда стучать ?!");
-         } else {
-             document.getElementById("text_field").value = "";
-             xhr(api);
-         }
-     } }
-
-
-
-
+     //drag n drop
