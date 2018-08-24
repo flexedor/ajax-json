@@ -4,6 +4,7 @@
     <list default="true" id="31d8e941-42b0-4dca-becd-fafe52da3ccd" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/task1.0.js" beforeDir="false" afterPath="$PROJECT_DIR$/task1.0.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task1.css" beforeDir="false" afterPath="$PROJECT_DIR$/task1.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -16,44 +17,43 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.47291362">
+    <splitter split-orientation="horizontal" split-proportion="0.3235725">
       <split-first>
-        <splitter split-orientation="vertical" split-proportion="0.17619048">
-          <split-first>
-            <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-              <file leaf-file-name="task1.0.html" pinned="false" current-in-tab="true">
-                <entry file="file://$PROJECT_DIR$/task1.0.html">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="11">
-                      <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-            </leaf>
-          </split-first>
-          <split-second>
-            <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-              <file leaf-file-name="task1.css" pinned="false" current-in-tab="true">
-                <entry file="file://$PROJECT_DIR$/task1.css">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="17">
-                      <caret line="72" selection-start-line="72" selection-end-line="72" />
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-            </leaf>
-          </split-second>
-        </splitter>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="task1.0.html" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/task1.0.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state>
+                  <caret selection-end-line="1" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="task1.css" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/task1.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="334">
+                  <caret line="151" column="17" selection-start-line="151" selection-start-column="17" selection-end-line="151" selection-end-column="17" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="task1.0.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/task1.0.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="163">
-                  <caret line="205" column="39" lean-forward="true" selection-start-line="205" selection-start-column="5" selection-end-line="205" selection-end-column="39" />
+                <state relative-caret-position="490">
+                  <caret line="427" lean-forward="true" selection-start-line="427" selection-end-line="427" />
+                  <folding>
+                    <element signature="n#!!block;n#cheaker#0;n#!!block;n#builder#0" />
+                    <element signature="n#!!block;n#recursion#0;n#!!block;n#builder#0" />
+                    <element signature="e#6279#7588#0" />
+                    <element signature="e#7601#8011#0" />
+                    <element signature="n#!!block;n#randomInteger#0;n#!!block;n#builder#0" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -92,8 +92,8 @@
         <option value="$PROJECT_DIR$/test.task.js" />
         <option value="$PROJECT_DIR$/test.js" />
         <option value="$PROJECT_DIR$/task1.0.html" />
-        <option value="$PROJECT_DIR$/task1.css" />
         <option value="D:/TMS/to-do/toDo.list.js" />
+        <option value="$PROJECT_DIR$/task1.css" />
         <option value="$PROJECT_DIR$/task1.0.js" />
       </list>
     </option>
@@ -113,10 +113,9 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-48" />
-    <option name="y" value="-26" />
-    <option name="width" value="820" />
-    <option name="height" value="717" />
+    <option name="x" value="683" />
+    <option name="width" value="674" />
+    <option name="height" value="728" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -212,7 +211,13 @@
       <workItem from="1534254991803" duration="1091000" />
       <workItem from="1534318289554" duration="830000" />
       <workItem from="1534320440246" duration="2028000" />
-      <workItem from="1534337382364" duration="1221000" />
+      <workItem from="1534337382364" duration="5077000" />
+      <workItem from="1534410746404" duration="9278000" />
+      <workItem from="1535019802595" duration="4539000" />
+      <workItem from="1535029016780" duration="6067000" />
+      <workItem from="1535053154265" duration="2827000" />
+      <workItem from="1535109915996" duration="2989000" />
+      <workItem from="1535113469328" duration="12606000" />
     </task>
     <task id="LOCAL-00001" summary="better than it was">
       <created>1534244597401</created>
@@ -225,7 +230,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="150689000" />
+    <option name="totallyTimeSpent" value="192851000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -535,22 +540,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/task1.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="72" selection-start-line="72" selection-end-line="72" />
+        <state relative-caret-position="334">
+          <caret line="151" column="17" selection-start-line="151" selection-start-column="17" selection-end-line="151" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/task1.0.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="11">
-          <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+        <state>
+          <caret selection-end-line="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/task1.0.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="205" column="39" lean-forward="true" selection-start-line="205" selection-start-column="5" selection-end-line="205" selection-end-column="39" />
+        <state relative-caret-position="490">
+          <caret line="427" lean-forward="true" selection-start-line="427" selection-end-line="427" />
+          <folding>
+            <element signature="n#!!block;n#cheaker#0;n#!!block;n#builder#0" />
+            <element signature="n#!!block;n#recursion#0;n#!!block;n#builder#0" />
+            <element signature="e#6279#7588#0" />
+            <element signature="e#7601#8011#0" />
+            <element signature="n#!!block;n#randomInteger#0;n#!!block;n#builder#0" />
+          </folding>
         </state>
       </provider>
     </entry>
