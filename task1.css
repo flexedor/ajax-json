@@ -30,7 +30,7 @@
     min-height: 18px;
 }
 #root{
-    padding-top: 50px;
+    padding: 50px;
     width: auto;
     display: inline-block;
     vertical-align: top;
@@ -42,34 +42,7 @@
     height: 22px;
     width: 400px;
 }
-#tabs .tab {
-    display: inline-block; /* выстраиваем вкладки в один ряд */
-    padding: 5px 10px;
-    cursor: pointer;
-    position: relative;
-    z-index:5;
-}
-#tabs .whiteborder {
-    border: 1px solid #707070;
-    border-bottom: 1px solid #fff;
-    border-radius: 3px 3px 0  0;
-}
-#tabs .tabContent {
-    width: 300px;
-    height: 60px;
-    border: 1px solid #707070;
-    position: relative;
-    top: -1px;
-    z-index:1;
-    padding: 10px;
-    border-radius: 0 0 3px 3px
-}
-#tabs .hide {
-    display: none;
-}
-#tabs .show {
-    display: block;
-}
+
 #conform{
     background-color: #219552;
     color: white;
@@ -145,6 +118,50 @@
 }
 .ExpandLeaf .Expand {
     cursor: auto; /* листовой узел */
+}
+.popup{
+    width: auto;
+    display: inline-block;
+    vertical-align: top;
+    border-style: solid;
+    border-color: #707070;
+    display: none;
+
+}
+.popup_on{
+    width: auto;
+    display: inline-block;
+    vertical-align: top;
+    display: block;
+    padding-bottom: 20px;
+
+}
+#tabs .tab {
+    display: inline-block; /* выстраиваем вкладки в один ряд */
+    padding: 5px 10px;
+    cursor: pointer;
+    position: relative;
+    z-index:5;
+}
+#tabs .whiteborder {
+    border: 1px solid #707070;
+    border-bottom: 1px solid #fff;
+    border-radius: 3px 3px 0  0;
+}
+#tabs .tabContent {
+    width: 300px;
+    border: 1px solid #707070;
+    position: relative;
+    top: -1px;
+    z-index:1;
+    padding: 10px;
+    border-radius: 0 0 3px 3px
+}
+#tabs .hide {
+    display: none;
+}
+#tabs .show {
+    display: block;
 }
 
 
