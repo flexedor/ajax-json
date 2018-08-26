@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="31d8e941-42b0-4dca-becd-fafe52da3ccd" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task1.0.js" beforeDir="false" afterPath="$PROJECT_DIR$/task1.0.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task1.css" beforeDir="false" afterPath="$PROJECT_DIR$/task1.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -23,8 +21,8 @@
           <file leaf-file-name="task1.0.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/task1.0.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state>
-                  <caret selection-end-line="1" />
+                <state relative-caret-position="187">
+                  <caret line="11" column="7" lean-forward="true" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
                 </state>
               </provider>
             </entry>
@@ -32,8 +30,8 @@
           <file leaf-file-name="task1.css" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/task1.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="334">
-                  <caret line="151" column="17" selection-start-line="151" selection-start-column="17" selection-end-line="151" selection-end-column="17" />
+                <state relative-caret-position="432">
+                  <caret line="166" column="20" selection-start-line="166" selection-start-column="20" selection-end-line="166" selection-end-column="20" />
                 </state>
               </provider>
             </entry>
@@ -45,14 +43,14 @@
           <file leaf-file-name="task1.0.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/task1.0.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="490">
-                  <caret line="427" lean-forward="true" selection-start-line="427" selection-end-line="427" />
+                <state relative-caret-position="171">
+                  <caret line="447" column="5" lean-forward="true" selection-start-line="447" selection-start-column="5" selection-end-line="447" selection-end-column="5" />
                   <folding>
                     <element signature="n#!!block;n#cheaker#0;n#!!block;n#builder#0" />
                     <element signature="n#!!block;n#recursion#0;n#!!block;n#builder#0" />
-                    <element signature="e#6279#7588#0" />
-                    <element signature="e#7601#8011#0" />
                     <element signature="n#!!block;n#randomInteger#0;n#!!block;n#builder#0" />
+                    <element signature="n#!!block;n#hideTabsContent#0" />
+                    <element signature="n#!!block;n#showTabsContent#0" />
                   </folding>
                 </state>
               </provider>
@@ -91,10 +89,10 @@
         <option value="$PROJECT_DIR$/data.json" />
         <option value="$PROJECT_DIR$/test.task.js" />
         <option value="$PROJECT_DIR$/test.js" />
-        <option value="$PROJECT_DIR$/task1.0.html" />
         <option value="D:/TMS/to-do/toDo.list.js" />
-        <option value="$PROJECT_DIR$/task1.css" />
         <option value="$PROJECT_DIR$/task1.0.js" />
+        <option value="$PROJECT_DIR$/task1.0.html" />
+        <option value="$PROJECT_DIR$/task1.css" />
       </list>
     </option>
   </component>
@@ -159,6 +157,14 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="task1.0.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:8090/ajax-json/task1.0.html" />
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.task1.0.html" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -218,6 +224,7 @@
       <workItem from="1535053154265" duration="2827000" />
       <workItem from="1535109915996" duration="2989000" />
       <workItem from="1535113469328" duration="12606000" />
+      <workItem from="1535290936206" duration="5726000" />
     </task>
     <task id="LOCAL-00001" summary="better than it was">
       <created>1534244597401</created>
@@ -226,21 +233,27 @@
       <option name="project" value="LOCAL" />
       <updated>1534244597404</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="все закончено">
+      <created>1535298561700</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1535298561701</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="192851000" />
+    <option name="totallyTimeSpent" value="198577000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.15300146" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.32857144" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="7" visible="true" weight="0.32857144" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" />
@@ -260,6 +273,32 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
@@ -268,11 +307,12 @@
       <path value="D:" />
     </ignored-roots>
     <MESSAGE value="better than it was" />
-    <option name="LAST_COMMIT_MESSAGE" value="better than it was" />
+    <MESSAGE value="все закончено" />
+    <option name="LAST_COMMIT_MESSAGE" value="все закончено" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="16" />
+      <option name="time" value="17" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -540,28 +580,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/task1.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="151" column="17" selection-start-line="151" selection-start-column="17" selection-end-line="151" selection-end-column="17" />
+        <state relative-caret-position="432">
+          <caret line="166" column="20" selection-start-line="166" selection-start-column="20" selection-end-line="166" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/task1.0.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="1" />
+        <state relative-caret-position="187">
+          <caret line="11" column="7" lean-forward="true" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/task1.0.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="490">
-          <caret line="427" lean-forward="true" selection-start-line="427" selection-end-line="427" />
+        <state relative-caret-position="171">
+          <caret line="447" column="5" lean-forward="true" selection-start-line="447" selection-start-column="5" selection-end-line="447" selection-end-column="5" />
           <folding>
             <element signature="n#!!block;n#cheaker#0;n#!!block;n#builder#0" />
             <element signature="n#!!block;n#recursion#0;n#!!block;n#builder#0" />
-            <element signature="e#6279#7588#0" />
-            <element signature="e#7601#8011#0" />
             <element signature="n#!!block;n#randomInteger#0;n#!!block;n#builder#0" />
+            <element signature="n#!!block;n#hideTabsContent#0" />
+            <element signature="n#!!block;n#showTabsContent#0" />
           </folding>
         </state>
       </provider>

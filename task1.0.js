@@ -1,9 +1,9 @@
 var starting_api = 'https:api.myjson.com/bins/1fkroa';
 var node_state_start="Node IsRoot ExpandClosed";
-//https://randomuser.me/api/?gender=male
 // если ввести"Node IsRoot ExpandClosed" все узлы будут скрыты
 // если "Node IsRoot ExpandOpen" все будут открыты;
 
+//создание шапки сайта с поисковой строкой
 var roof = document.createElement("div");
 document.body.appendChild(roof);
 roof.className = "toolbar";
@@ -21,7 +21,7 @@ roof.appendChild(button_conform);
 
 
 
-
+//функция для создания и построения  дерева (не очень эффективная )
 function builder(data) {
 
     var container = document.createElement("div");
@@ -48,10 +48,10 @@ function builder(data) {
     popup.id="tabs";
 
 
+//вешаем обработчик нажатий на дерево и вешаем drag 'n drop
+    event_list(container);
 
-    event_list(container);//вешаем обработчик
-
-
+//для построения дерева
     function cheaker(data,container) {
         for (var key in  data ){
             if (data.hasOwnProperty(key)){
@@ -153,6 +153,7 @@ function builder(data) {
         }
     }
 
+//для построения дерева 2(они работают в паре (рекурсия корректно не работала )
     function recursion(data,container){
         for (var key in data){
             if (data.hasOwnProperty(key)){
@@ -245,11 +246,14 @@ function builder(data) {
                         li.innerHTML += key + ':' + '"' + data[key] + '"' ;
                 }}}}
 
+//функция выдающая рандомное число для квадратиков (это было лишнее но все же )
     function randomInteger(min, max) {
             var rand = min - 0.5 + Math.random() * (max - min + 1)
             rand = Math.round(rand);
             return rand;
         }
+
+
 
     recursion(data,container);
 
@@ -266,7 +270,7 @@ function builder(data) {
     tab_with_errors.innerHTML="errors";
     tab_with_warnings.innerHTML="warnings";
 
-    tab={tab_with_warnings,tab_with_errors};
+    tab=document.getElementsByClassName('tab');
 
 //контент табов
     var tab_content_with_errors =document.createElement("div");
@@ -278,8 +282,8 @@ function builder(data) {
     tab_content_with_errors.className='tabContent';
     tab_content_with_warnings.className='tabContent hide';
 
-    tabContent={tab_content_with_errors,tab_content_with_warnings}
-
+    tabContent=document.getElementsByClassName("tabContent");
+//определение пустых табов
     if (errors_in_DIV!='no errors'){
         recursion(errors_in_DIV,tab_content_with_errors);
     }else{
@@ -297,13 +301,30 @@ function builder(data) {
 
 
 };
-
-function lengthInUtf8Bytes(str) {//расчет веса json в байтах
+//данная функция нужна для табов
+function hideTabsContent(a) {
+    for (var i=a; i<tabContent.length; i++) {
+        tabContent[i].classList.remove('show');
+        tabContent[i].classList.add("hide");
+        tab[i].classList.remove('whiteborder');
+    }
+}
+//и эта функция  тоже нужна для  табов
+function showTabsContent(b){
+    if (tabContent[b].classList.contains('hide')) {
+        hideTabsContent(0);
+        tab[b].classList.add('whiteborder');
+        tabContent[b].classList.remove('hide');
+        tabContent[b].classList.add('show');
+    }
+}
+//данная функция ведет расчет веса json в байтах
+function lengthInUtf8Bytes(str) {
     var m = encodeURIComponent(str).match(/%[89ABab]/g);
     return str.length + (m ? m.length : 0);
 }
 
-
+//создаем запрос
 function xhr(starting_api){
     // 1. Создаём новый объект XMLHttpRequest
     var xhr = new XMLHttpRequest();
@@ -325,7 +346,7 @@ function xhr(starting_api){
             var data = JSON.parse(xhr.responseText);
             int=JSON.stringify(xhr.responseText);
 
-
+        //отлов ошибок в Json файле
         }catch (e) {
             alert("Error of Json"+e.name+e.message);
         }finally {
@@ -342,9 +363,11 @@ function xhr(starting_api){
 
     }
 }
+//название функции говорит само за себя это отлов действий на странице
 function event_list(tree) {
-
+    //drag n drop
     tree.onmousedown = function (e) {
+        //проверка на кнопки (на них drag n drop не работает )
         if (e.target.className==="Expand"||e.target.className==="json"||e.target.className==="tab whiteborder"
             ||e.target.className==="tab"){
             return false;
@@ -387,7 +410,7 @@ function event_list(tree) {
                     left: box.left + pageXOffset
                 };
         }}}
-
+//отлов нажатий на кнопки и expand
     window.onclick = function (e) {
         var elem = e ? e.target : window.event.srcElement;
         if (elem.className === "Expand") {
@@ -407,21 +430,24 @@ function event_list(tree) {
             }
         }else if(elem.className==="json"){
             if (elem.lastElementChild.className==="popup"){
+                hideTabsContent(1);
                 elem.lastElementChild.className="popup_on";
 
             } else {
                 elem.lastElementChild.className="popup";
             }
             console.log(elem.lastElementChild.className);
-        }else if(elem.className==="tab whiteborder"){
-                elem.className = "tab";
-
         }else if(elem.className==="tab"){
-                elem.className="tab whiteborder";
+                for(var d=0 ;d <tab.length; d++){
+                    if(elem==tab[d]){
+                        showTabsContent(d);
+                        break;
+                    }
+                }
         }
     }
 }
-
+//запуск всего кода
 xhr(starting_api);
 
-     //drag n drop
+
