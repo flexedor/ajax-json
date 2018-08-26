@@ -251,6 +251,8 @@ function builder(data) {
             return rand;
         }
 
+
+
     recursion(data,container);
 
 
@@ -266,7 +268,7 @@ function builder(data) {
     tab_with_errors.innerHTML="errors";
     tab_with_warnings.innerHTML="warnings";
 
-    tab={tab_with_warnings,tab_with_errors};
+    tab=document.getElementsByClassName('tab');
 
 //контент табов
     var tab_content_with_errors =document.createElement("div");
@@ -278,7 +280,7 @@ function builder(data) {
     tab_content_with_errors.className='tabContent';
     tab_content_with_warnings.className='tabContent hide';
 
-    tabContent={tab_content_with_errors,tab_content_with_warnings}
+    tabContent=document.getElementsByClassName("tabContent");
 
     if (errors_in_DIV!='no errors'){
         recursion(errors_in_DIV,tab_content_with_errors);
@@ -297,6 +299,22 @@ function builder(data) {
 
 
 };
+function hideTabsContent(a) {
+    for (var i=a; i<tabContent.length; i++) {
+        tabContent[i].classList.remove('show');
+        tabContent[i].classList.add("hide");
+        tab[i].classList.remove('whiteborder');
+    }
+}
+
+function showTabsContent(b){
+    if (tabContent[b].classList.contains('hide')) {
+        hideTabsContent(0);
+        tab[b].classList.add('whiteborder');
+        tabContent[b].classList.remove('hide');
+        tabContent[b].classList.add('show');
+    }
+}
 
 function lengthInUtf8Bytes(str) {//расчет веса json в байтах
     var m = encodeURIComponent(str).match(/%[89ABab]/g);
@@ -343,7 +361,7 @@ function xhr(starting_api){
     }
 }
 function event_list(tree) {
-
+    //drag n drop
     tree.onmousedown = function (e) {
         if (e.target.className==="Expand"||e.target.className==="json"||e.target.className==="tab whiteborder"
             ||e.target.className==="tab"){
@@ -407,21 +425,24 @@ function event_list(tree) {
             }
         }else if(elem.className==="json"){
             if (elem.lastElementChild.className==="popup"){
+                hideTabsContent(1);
                 elem.lastElementChild.className="popup_on";
 
             } else {
                 elem.lastElementChild.className="popup";
             }
             console.log(elem.lastElementChild.className);
-        }else if(elem.className==="tab whiteborder"){
-                elem.className = "tab";
-
         }else if(elem.className==="tab"){
-                elem.className="tab whiteborder";
+                for(var d=0 ;d <tab.length; d++){
+                    if(elem==tab[d]){
+                        showTabsContent(d);
+                        break;
+                    }
+                }
         }
     }
 }
 
 xhr(starting_api);
 
-     //drag n drop
+

@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="31d8e941-42b0-4dca-becd-fafe52da3ccd" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/task1.0.js" beforeDir="false" afterPath="$PROJECT_DIR$/task1.0.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task1.css" beforeDir="false" afterPath="$PROJECT_DIR$/task1.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -32,8 +30,8 @@
           <file leaf-file-name="task1.css" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/task1.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="334">
-                  <caret line="151" column="17" selection-start-line="151" selection-start-column="17" selection-end-line="151" selection-end-column="17" />
+                <state relative-caret-position="313">
+                  <caret line="153" column="23" lean-forward="true" selection-start-line="153" selection-start-column="23" selection-end-line="153" selection-end-column="23" />
                 </state>
               </provider>
             </entry>
@@ -45,14 +43,14 @@
           <file leaf-file-name="task1.0.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/task1.0.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="490">
-                  <caret line="427" lean-forward="true" selection-start-line="427" selection-end-line="427" />
+                <state relative-caret-position="34">
+                  <caret line="2" column="2" lean-forward="true" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="40" />
                   <folding>
                     <element signature="n#!!block;n#cheaker#0;n#!!block;n#builder#0" />
                     <element signature="n#!!block;n#recursion#0;n#!!block;n#builder#0" />
-                    <element signature="e#6279#7588#0" />
-                    <element signature="e#7601#8011#0" />
                     <element signature="n#!!block;n#randomInteger#0;n#!!block;n#builder#0" />
+                    <element signature="n#!!block;n#hideTabsContent#0" />
+                    <element signature="n#!!block;n#showTabsContent#0" />
                   </folding>
                 </state>
               </provider>
@@ -218,6 +216,7 @@
       <workItem from="1535053154265" duration="2827000" />
       <workItem from="1535109915996" duration="2989000" />
       <workItem from="1535113469328" duration="12606000" />
+      <workItem from="1535290936206" duration="2203000" />
     </task>
     <task id="LOCAL-00001" summary="better than it was">
       <created>1534244597401</created>
@@ -230,7 +229,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="192851000" />
+    <option name="totallyTimeSpent" value="195054000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -272,7 +271,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="16" />
+      <option name="time" value="17" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -540,8 +539,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/task1.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="151" column="17" selection-start-line="151" selection-start-column="17" selection-end-line="151" selection-end-column="17" />
+        <state relative-caret-position="313">
+          <caret line="153" column="23" lean-forward="true" selection-start-line="153" selection-start-column="23" selection-end-line="153" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -554,14 +553,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/task1.0.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="490">
-          <caret line="427" lean-forward="true" selection-start-line="427" selection-end-line="427" />
+        <state relative-caret-position="34">
+          <caret line="2" column="2" lean-forward="true" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="40" />
           <folding>
             <element signature="n#!!block;n#cheaker#0;n#!!block;n#builder#0" />
             <element signature="n#!!block;n#recursion#0;n#!!block;n#builder#0" />
-            <element signature="e#6279#7588#0" />
-            <element signature="e#7601#8011#0" />
             <element signature="n#!!block;n#randomInteger#0;n#!!block;n#builder#0" />
+            <element signature="n#!!block;n#hideTabsContent#0" />
+            <element signature="n#!!block;n#showTabsContent#0" />
           </folding>
         </state>
       </provider>
