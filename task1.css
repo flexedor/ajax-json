@@ -163,6 +163,8 @@
 #tabs .show {
     display: block;
 }
-
+.head_with_json{
+    cursor: pointer;
+}
 
 
